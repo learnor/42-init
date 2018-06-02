@@ -1,0 +1,14 @@
+# Find the external IP of 42.fr
+echo 163.172.250.11
+echo 163.172.250.12
+echo 163.172.250.13
+
+# dig +short 42.fr
+
+# dig (domain information groper) is a flexible tool for interrogating DNS name servers.
+# It performs DNS lookups and displays the answers that are returned from the name server(s) that were queried.
+# Most DNS administrators use dig to troubleshoot DNS problems because of its flexibility, ease of use and clarity of output.
+# Other lookup tools tend to have less functionality than dig.
+
+#  +[no]short
+#  Provide a terse answer. The default is to print the answer in a verbose form.

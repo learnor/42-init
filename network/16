@@ -1,0 +1,6 @@
+# Make the intra.42.fr address reroute to 46.19.122.85
+
+# echo "46.19.122.85 intr.42.fr" >> /etc/hosts
+
+# Deduction
+# Will get "permission denied since no write permission with /etc/hosts"

@@ -1,0 +1,7 @@
+# Identifiy the default gateway in the routing table
+
+route -n get default|grep gateway|awk '{print $2}'
+
+# 'route -n get default' lookup and display the route for default
+# 'grep gateway' filter out the line with 'gateway'
+# "awd '{print $2}'" print out the second part(delimited by whitespace)

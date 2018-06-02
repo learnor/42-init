@@ -1,0 +1,8 @@
+# Use the output of the previous command to find the name and IP address of the device
+# that makes the link between you (local network) and the outside world
+
+# nat (10.90.1.11)
+# Deduction
+# traceroute slash16.org|grep nat|awk '{print $2 $3}'
+# 'nat' stands for 'Network Address Translation'
+# 'nat' is the device that makes the link between local network and outside world

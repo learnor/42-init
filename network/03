@@ -1,0 +1,5 @@
+# Identify the MAC address of the Wi-Fi card
+
+networksetup -getmacaddress en1|awk '{print $3}'
+# 'networksetup -getmacaddress en1' find out the line with wifi-card(interface en1) address
+# "awk '{print $3}'" print out the actual address(part 3 delimited by whitespace)

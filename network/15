@@ -1,0 +1,5 @@
+# What file contains the local DNS entries?
+
+echo /etc/hosts
+
+# https://www.imore.com/how-edit-your-macs-hosts-file-and-why-you-would-want

@@ -1,0 +1,9 @@
+# Get the complete path of the file that contains the IP address of the DNS server you’re using
+
+# /var/run/resolv.conf
+
+# Deduction
+# /etc/resolv.conf contains the IP address of the used DNS server
+# ls -l /etc/resolv.conf will gives the output:
+# lrwxr-xr-x  1 root  wheel  22 Nov  8  2017 /etc/resolv.conf -> ../var/run/resolv.conf
+# showing that the actual file is /var/run/resolv.conf

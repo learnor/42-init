@@ -1,0 +1,10 @@
+# Query an external DNS server on the slash16.org domain name (ie. : google 8.8.8.8)
+
+nslookup slash16.org 8.8.8.8
+
+# compare the result to that of 
+# nslookup slash16.org
+# nslookup is used for querying the DNS to obtain name or IP address mapping, try:
+# nslookup 64.62.224.24 8.8.8.8
+# and 
+# nslookup 10.51.1.51

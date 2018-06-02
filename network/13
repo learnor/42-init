@@ -1,0 +1,13 @@
+# Figure out the server type
+# DCHP
+
+# Deduction
+
+# 'raceroute 10.51.1.253' get following output:
+
+# traceroute to 10.51.1.253 (10.51.1.253), 64 hops max, 52 byte packets
+#  1  10.112.254.254 (10.112.254.254)  0.764 ms  0.475 ms  0.385 ms
+#  2  192.168.0.2 (192.168.0.2)  0.466 ms  0.346 ms  0.433 ms
+#  3  dhcp (10.51.1.253)  0.376 ms  0.295 ms  0.219 ms
+
+# the destination server type is dhcp

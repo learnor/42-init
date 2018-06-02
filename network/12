@@ -1,0 +1,19 @@
+# Check that the server with the 10.51.1.253 IP address is reachable from your computer
+ping -c 1 10.51.1.253 &>/dev/null
+
+# echo $?
+
+if [[ $? == 0 ]]; then
+	echo 'reachable'
+elif [[ $? == 2 ]]; then
+	echo 'not reachable'
+else
+	echo 'other error'
+fi
+
+# $? is a built-in variable that stores the exit status of a command, function, or the script itself.
+ 
+# $? reads the exit status of the last command executed. 
+# After a function returns, $? gives the exit status of the last command executed in the function.
+# This is Bash's way of giving functions a "return value."
+# It returns 0 on success or an integer in the range 1 - 255 on error.

@@ -1,0 +1,8 @@
+# Find the provider of slash16.org
+
+# ONLINE SAS
+
+# Deduction
+# whois slash16.org|grep Registrar:
+# whois querys the domain registrar
+# Grep the resulst with 'Registrar:' to get the provider name
