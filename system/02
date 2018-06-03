@@ -1,0 +1,7 @@
+# What command can you use to rename your system?
+
+hostname coolname
+
+# 'hostname' can be used to display or set system name
+# try 'hostname' with and without argument
+# don't forget sudo
