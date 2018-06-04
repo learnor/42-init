@@ -1,0 +1,6 @@
+# Figure out the PID of the SSHD service.
+
+pgrep sshd
+
+# The pgrep command searches the process table on the running system
+# and prints the process IDs of all processes that match the criteria given on the command line.

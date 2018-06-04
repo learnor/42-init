@@ -1,0 +1,6 @@
+# With the previous command, forbid all others.
+
+iptables -P INPUT DROP
+iptables -p OUTPUT DROP
+
+# Setup iptables to drop all connection except specified before.

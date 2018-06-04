@@ -1,0 +1,8 @@
+# Name the command that lists the partition tables of external devices?
+
+du -sh /var/*
+
+# The du utility displays the file system block usage for each file argument and for each directory
+# in the file hierarchy rooted in each directory argument.
+# -s Display an entry for each specified file.
+# -h "Human-readable" output.  Use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte.

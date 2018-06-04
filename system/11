@@ -1,0 +1,7 @@
+# Name the command that displays the available space left on the system?
+
+df -h
+
+# -h make the available space human readable. try without it.
+# The df utility displays statistics about the amount of free disk space on the specified filesystem
+# or on the filesystem of which file is a part.

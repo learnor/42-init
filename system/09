@@ -1,0 +1,5 @@
+# What command lets you know who is connected to the System?
+who
+# The who utility displays a list of all users currently logged on,
+# showing for each user the login name, tty name, the date and time of login, and hostname if not local.
+# Also checkout the command 'w'

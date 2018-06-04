@@ -1,0 +1,6 @@
+# Find the command that kills the background command’s process
+
+kill -s KILL $(jobs -p)
+
+# 'jobs -p' gets the pids of running processes
+# 'kill -s KILL' sends 'KILL' signals.

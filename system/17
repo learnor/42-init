@@ -1,0 +1,6 @@
+# Find the command which gives the list of firewall rules
+
+iptables -L
+
+# install with 'apt-get install iptables'
+# man 'iptables -h' for help

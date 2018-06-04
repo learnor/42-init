@@ -1,0 +1,6 @@
+# Name the command that reboots the SSH service.
+
+service ssh restart
+
+# Don't forget to sudo
+# Use last command to check if the id changes after restart
