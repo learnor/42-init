@@ -1,8 +1,7 @@
 # Find the provider of slash16.org
 
-# ONLINE SAS
+# AWS
 
 # Deduction
-# whois slash16.org|grep Registrar:
-# whois querys the domain registrar
-# Grep the resulst with 'Registrar:' to get the provider name
+# 'dig +short slash16.org' to get the provider server IP addresses
+# 'curl ipinfo.io/{ip}' to get the ISP info
