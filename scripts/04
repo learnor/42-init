@@ -1,0 +1,24 @@
+# Write a script which monitors the modifications made to the /etc/crontab file and sends an e-mail
+# to root if the file is modified. Create a scheduled task to run this script everyday at midnight.
+
+echo 'TARGET=/etc/crontab
+BACKUP=/etc/.crontab_bak
+CHECK_SUM=/etc/.crontab_check
+
+if [ -f $CHECK_SUM ] && [ -f $BACKUP ]; then
+	if md5sum -c $CHECK_SUM 2>/dev/null | grep -q "FAILED"; then
+		diff $TARGET $BACKUP | mail -s "Change in crontab" root
+		md5sum $TARGET > $CHECK_SUM
+		cp $TARGET $BACKUP
+	fi
+else
+	md5sum $TARGET > $CHECK_SUM
+	cp $TARGET $BACKUP
+fi' > ~/.mailme.sh
+
+cjob="0 0 * * * sudo sh ~/.mailme.sh"
+gcjob="0 0 [*] [*] [*] sudo sh ~/.mailme.sh"
+if ! crontab -l 2>/dev/null | grep -q "$gcjob"; then
+	echo "$cjob" | crontab
+fi
+crontab -l
